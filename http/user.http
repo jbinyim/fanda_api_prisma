@@ -1,0 +1,25 @@
+// 회원가입
+POST http://localhost:5050/register
+Content-Type: application/json
+
+{
+  "email": "test1@test.com",
+  "nickname": "test1",
+  "password": "test"
+}
+
+// 로그인 및 토큰 부여
+###
+POST http://localhost:5050/login
+Content-Type: application/json
+
+{
+  "email": "test1@test.com",
+  "password": "test"
+}
+
+// 토큰갱신
+###
+POST http://localhost:5050/token/refresh
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWFnZm4wNmYwMDAwdHg3Y2ZzamF3YTlqIiwiaWF0IjoxNzQ2NzczMjI2LCJleHAiOjE3NDc5ODI4MjZ9.k-o-Orvh86VvQe1USicrUtUjaIElSxQtcldjlbI2xwE
+

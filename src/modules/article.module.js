@@ -1,5 +1,5 @@
-const express = require("express");
-const prisma = require("../db/prisma/client.prisma");
+import express from "express";
+import prisma from "../db/prisma/client.prisma.js";
 
 const articleRouter = express.Router();
 
@@ -90,4 +90,4 @@ articleRouter.post("/:articleId", async (req, res, next) => {
   }
 });
 
-module.exports = articleRouter;
+export default articleRouter;

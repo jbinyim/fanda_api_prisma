@@ -4,4 +4,4 @@ function errorHandler(err, req, res, next) {
   res.status(500).send(message);
 }
 
-module.exports = errorHandler;
+export default errorHandler;

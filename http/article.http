@@ -1,0 +1,24 @@
+POST http://localhost:5050/article
+Content-Type: application/json
+
+{
+  "title": "프링글스 핫 스파이시시",
+  "content": "사천원 투플원"
+}
+
+###
+GET  http://localhost:5050/article
+
+### 
+GET http://localhost:5050/article/13ac0ed2-e20e-4ce8-ad0c-059361936efa
+
+###
+POST http://localhost:5050/article/92e7c774-b010-493f-bb31-a099a221e40f
+Content-Type: application/json
+
+{
+  "content": "키보드 정도는 그냥 새거로 사요"
+}
+
+###
+GET http://localhost:5050/article/92e7c774-b010-493f-bb31-a099a221e40f
